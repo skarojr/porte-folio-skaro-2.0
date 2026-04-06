@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Portfolio — SKARO</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="grain"></div>
+<div class="grid-ol"></div>
+
+<div class="page">
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">&lt;<span>yonkoue njoya emma junior  alias "SKARO"</span>/&gt;</div>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#cv-section" class="nav-cv">↓ Mon CV</a>
+    <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" style="position:relative">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge"><span class="dot"></span>Disponible · douala,Cameroun</div>
+      <h1 class="hero-title">Créatif &amp;<br><span class="name">Passionné</span><br>du Digital.</h1>
+      <p class="hero-desc">Étudiant en formation, je conçois des interfaces web modernes, crée des visuels percutants et développe des stratégies de contenu efficaces.
+        Je suis un créatif polyvalent à l’intersection du développement web, du design graphique et du marketing digital. Mon objectif est simple : transformer des idées en expériences visuelles et digitales impactantes.
+
+
+Côté design, je donne vie aux concepts grâce à des outils comme Canva , Adobe Photoshop et Adobe Illustrator , en créant des visuels attractifs, professionnels et adaptés aux besoins des marques.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Voir mes projets ↓</a>
+        <a href="#cv-section" class="btn btn-cv">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Télécharger mon CV
+        </a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-avatar"><img src="profil.jpeg" alt="mon profil"><div class="avatar-lbl">skaro</div></div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-bar"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="reveal-l" style="position:relative">
+      <div class="about-photo"><img src="profil.jpeg" alt="mon profil"></div>
+      <div class="about-card" style="position:absolute">
+        <div class="num">1er</div>
+        <div class="lbl">Années de formation</div>
+      </div>
+    </div>
+    <div class="reveal-r">
+      <div class="section-tag">À propos de moi</div>
+      <h2 class="big">Étudiant curieux,<br>futur <span class="hl">pro du digital.</span></h2>
+      <p style="color:var(--muted2);line-height:1.8;margin-bottom:1rem">Je suis étudiant passionné par le développement web, le design graphique et le marketing digital. Je combine créativité et technique pour créer des projets cohérents et percutants.</p>
+      <p style="color:var(--muted2);line-height:1.8;margin-bottom:1.4rem">Polyvalent et rigoureux, je m'adapte à chaque défi — du site vitrine à la campagne visuelle complète.</p>
+      <div class="chips">
+        <span class="chip">🎓 En formation</span>
+        <span class="chip">🌍 douala</span>
+        <span class="chip">💡 Créatif</span>
+        <span class="chip">⚡ Rigoureux</span>
+        <span class="chip">🤝 Collaboratif</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="padding:7rem 0">
+  <div class="inner">
+    <div class="skills-head reveal">
+      <div class="section-tag" style="justify-content:center">Mes expertises</div>
+      <h2 class="big" style="text-align:center">Compétences &amp; <span class="hl">Maîtrises</span></h2>
+    </div>
+    <div class="skills-layout">
+      <div class="skill-group reveal">
+        <h4>Développement Web</h4>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">HTML</span><span class="skill-pct">80%</span></div>
+          <div class="track"><div class="fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">CSS</span><span class="skill-pct">60%</span></div>
+          <div class="track"><div class="fill" data-w="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">JavaScript</span><span class="skill-pct">45%</span></div>
+          <div class="track"><div class="fill" data-w="45"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Maintenance Web</span><span class="skill-pct">60%</span></div>
+          <div class="track"><div class="fill" data-w="60"></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal" style="transition-delay:.15s">
+        <h4>Design Graphique</h4>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Canva</span><span class="skill-pct">90%</span></div>
+          <div class="track"><div class="fill gold" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Adobe Illustrator</span><span class="skill-pct">75%</span></div>
+          <div class="track"><div class="fill gold" data-w="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Adobe Photoshop</span><span class="skill-pct">60%</span></div>
+          <div class="track"><div class="fill gold" data-w="60"></div></div>
+        </div>
+        <h4 style="margin-top:2rem">Marketing &amp; Contenu</h4>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Marketing Digital</span><span class="skill-pct">85%</span></div>
+          <div class="track"><div class="fill green" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-head"><span class="skill-name">Création de Contenu</span><span class="skill-pct">85%</span></div>
+          <div class="track"><div class="fill green" data-w="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="proj-top">
+    <div class="reveal">
+      <div class="section-tag">Mes réalisations</div>
+      <h2 class="big">Mes <span class="hl">Projets</span></h2>
+    </div>
+  </div>
+  <div class="proj-grid">
+    <div class="proj-card reveal">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#0f172a,#1e3a5f)"><img src="mater.png" alt="masterkey"></div>
+      <div class="proj-body">
+        <div class="proj-type">Site Web</div>
+        <h3>Site Vitrine Entreprise</h3>
+        <p>Site complet pour une entreprise locale — pages services, équipe et formulaire de contact responsive.</p>
+        <div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
+        <div class="proj-links">
+          <a href="https://masterkeys-cm.com/" class="proj-link">↗ Voir le projet</a>
+          <a href="#" class="proj-link">⌥ Code source</a>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card reveal" style="transition-delay:.1s">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#1a0533,#4a1a6e)"><img src="affiche.jpg" alt="masterkey"></div>
+      <div class="proj-body">
+        <div class="proj-type">Design Graphique</div>
+        <h3>Identité Visuelle Complète</h3>
+        <p>Logo, charte graphique, supports print et templates réseaux sociaux pour une marque locale.</p>
+        <div class="ptags"><span class="ptag">Illustrator</span><span class="ptag">Canva</span><span class="ptag">Branding</span></div>
+        <div class="proj-links"><a href="#" class="proj-link">↗ Voir le projet</a></div>
+      </div>
+    </div>
+    <div class="proj-card reveal" style="transition-delay:.2s">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#0c2a1a,#0f5132)"><img src="campagne.png" alt="campagne"></div>
+      <div class="proj-body">
+        <div class="proj-type">Marketing Digital</div>
+        <h3>Campagne Réseaux Sociaux</h3>
+        <p>Stratégie de contenu + visuels pour une campagne Instagram & Facebook sur 30 jours.</p>
+        <div class="ptags"><span class="ptag">Canva</span><span class="ptag">Photoshop</span><span class="ptag">Social Media</span></div>
+        <div class="proj-links"><a href="https://web.facebook.com/profile.php?id=61587368493184&__cft__[0]=AZZwwJ4maAdG4KvP3wii4zAMFKRv4n_axurQQ_3Qpr1BQpm0_-C0qA1uIKdGm4BjcHeQ0qXVtNDmDqipa9pnfsjT7_0
+          y9IbOpSFe1soFdAzHN_OB_NYciseZiARU3vEy9_amDFGZOJqGKtvwWuPOhvWpD5yU4gp5v_DX6zIXf745555VzBYhWMAjwcmh-ZUKbKkjnlCr2UubgVFgkfbSQEt0&__tn__=R-R" class="proj-link">↗ Voir le projet</a></div>
+      </div>
+    </div>
+    <div class="proj-card reveal" style="transition-delay:.3s">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#1a1200,#4a3200)"><img src="tim solution.png" alt="tim"></div>
+      <div class="proj-body">
+        <div class="proj-type">Développement Web</div>
+        <h3>Dashboard Interactif</h3>
+        <p>Interface de visualisation de données avec filtres dynamiques et graphiques en temps réel.</p>
+        <div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">↗ Voir le projet</a>
+          <a href="#" class="proj-link">⌥ Code source</a>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card reveal" style="transition-delay:.4s">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#0a1929,#0d3c6e)">🛒</div>
+      <div class="proj-body">
+        <div class="proj-type">E-commerce</div>
+        <h3>Boutique en Ligne</h3>
+        <p>Site de vente avec catalogue, panier, paiement mobile et panneau d'administration.</p>
+        <div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span><span class="ptag">PHP</span></div>
+        <div class="proj-links"><a href="#" class="proj-link">↗ Voir le projet</a></div>
+      </div>
+    </div>
+    <div class="proj-card reveal" style="transition-delay:.5s">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#1a0a00,#5c1f00)">🎬</div>
+      <div class="proj-body">
+        <div class="proj-type">Création de Contenu</div>
+        <h3>Visuels &amp; Motion Design</h3>
+        <p>Création de visuels animés et montages pour la communication de plusieurs entreprises.</p>
+        <div class="ptags"><span class="ptag">Canva</span><span class="ptag">Photoshop</span><span class="ptag">Motion</span></div>
+        <div class="proj-links"><a href="#" class="proj-link">↗ Voir le projet</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CV DOWNLOAD -->
+<section id="cv-section">
+  <div class="cv-box reveal">
+    <div class="cv-icon">📄</div>
+    <h3>Télécharger mon CV</h3>
+    <p>Consultez mon parcours complet, mes formations et expériences.</p>
+    <a href="mon-cv.pdf" download class="btn-dl">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Télécharger le CV (PDF)
+    </a>
+    <span class="cv-note">→ telecharger le fichier imprimable de mon cv </span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding:7rem 0">
+  <div class="inner">
+    <div class="contact-layout">
+      <div class="reveal-l">
+        <div class="section-tag">Restons en contact</div>
+        <h2 class="big">Parlons de votre <span class="hl">projet.</span></h2>
+        <p style="color:var(--muted2);line-height:1.8">Stage, freelance ou collaboration — je suis ouvert à toutes les opportunités.</p>
+        <div class="clinks">
+          <a href="mailto:votre@gmail.com" class="clink"><div class="ci">✉️</div>ej2663855@gmail.com</a>
+          <a href="https://wa.me/237693559703" target="_blank" class="clink"><div class="ci">💬</div>+237 693559703(WhatsApp)</a>
+          <a href="https://linkedin.com/in/votre-profil" target="_blank" class="clink"><div class="ci">🔗</div>LinkedIn — Votre Nom</a>
+          <a href="https://github.com/skaro" target="_blank" class="clink"><div class="ci">⌥</div>GitHub — skaro</a>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <form class="cf" id="contactForm">
+          <div class="form-row">
+            <div class="fg"><form id="contactForm">
+  <label for="fn">Nom complet</label><input type="text" id="name" placeholder="Nom complet" required>
+   <div class="fg"><label for="em">Email</label></div><input type="email" id="email" placeholder="Email" required>
+  <div class="fg"><label for="sj">Sujet</label></div><input type="text" id="subject" placeholder="Sujet" required>
+  <div class="fg"><label for="mg">Message</label></textarea></div><textarea id="message" placeholder="Votre message..." required></textarea>
+          
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;cursor:none">Envoyer le message →</button>
+          <p id="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">&lt;SKARO/&gt;</div>
+    <div class="socials">
+      <div class="social-links">
+  <a href="mailto:ej2663855@gmail.com" class="social-btn">
+    <i class="fas fa-envelope"></i> Gmail
+  </a>
+
+  <a href="https://wa.me/237693559703" target="_blank" class="social-btn">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <a href="www.linkedin.com/in/emma-junior-77b6aa326" target="_blank" class="social-btn">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+
+  <a href="https://github.com/skaro" target="_blank" class="social-btn">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+
+  <!-- <a href="#" target="_blank" class="social-btn">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>-->
+
+  <!--<a href="#" target="_blank" class="social-btn">
+    <i class="fab fa-x-twitter"></i> Twitter / X
+  </a>
+
+  <a href="#" target="_blank" class="social-btn">
+    <i class="fab fa-tiktok"></i> TikTok
+  </a> -->
+
+  <a href="https://web.facebook.com/profile.php?id=61577896687590&__cft__[0]=AZacanDiAoKpWAXKVg7Ygn4ZIXDfibMjwCiloSyEz8bLB-VNCeZJtdtwj53fZ1n5KhIkMQmHr14NGVNC2uyxJcWaCgAkpkQ3fG26WbJAA169gPr6dwJgYMQdqSO4ugpUbNfSRunJULJKpvLEGhyHPSCxvbWda6Zvfzlv2kXvGLhM5bqKX6snsEk_9g122Yvt4rlmzjFGT04WQP00IZutRuSy&__tn__=R-R" target="_blank" class="social-btn">
+    <i class="fab fa-facebook"></i> Facebook
+  </a>
+
+  <!-- <a href="#" target="_blank" class="social-btn">
+    <i class="fab fa-youtube"></i> YouTube 
+  </a>-->
+      
+</div>
+    <div class="footer-copy"><h1>© 2025 yonkoue noya  — Conçu &amp; développé part skaro depuis douala, Cameroun</h1></div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+/* ================= CURSOR ================= */
+const cur = document.getElementById('cur'),
+      ring = document.getElementById('cur-ring');
+
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX;
+  my = e.clientY;
+});
+
+(function tick(){
+  cur.style.left = mx + 'px';
+  cur.style.top = my + 'px';
+
+  rx += (mx - rx) * .11;
+  ry += (my - ry) * .11;
+
+  ring.style.left = rx + 'px';
+  ring.style.top = ry + 'px';
+
+  requestAnimationFrame(tick);
+})();
+
+document.querySelectorAll('a,button,.proj-card,.skill-group').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    ring.style.width = '52px';
+    ring.style.height = '52px';
+  });
+  el.addEventListener('mouseleave', () => {
+    ring.style.width = '32px';
+    ring.style.height = '32px';
+  });
+});
+
+
+/* ================= BACKGROUND FUTURISTE ================= */
+
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+
+let W, H;
+
+function resize(){
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+
+/* PARTICULES */
+class Particle {
+  constructor(){ this.reset(true); }
+
+  reset(init){
+    this.x = Math.random() * W;
+    this.y = init ? Math.random() * H : H + 50;
+    this.vx = (Math.random() - 0.5) * 0.3;
+    this.vy = -(Math.random() * 0.5 + 0.2);
+    this.size = Math.random() * 1.5 + 0.3;
+
+    const colors = ['0,212,255','255,0,128','6,214,160'];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  update(){
+    this.x += this.vx;
+    this.y += this.vy;
+    if(this.y < -50) this.reset();
+  }
+
+  draw(){
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${this.color},0.5)`;
+    ctx.fill();
+  }
+}
+
+
+/* LIGNES */
+class Line {
+  constructor(){ this.reset(); }
+
+  reset(){
+    this.x = Math.random() * W;
+    this.y = Math.random() * H;
+    this.len = Math.random() * 150 + 50;
+    this.angle = Math.random() * Math.PI;
+    this.speed = Math.random() * 0.5 + 0.2;
+
+    const colors = [
+      '0,212,255',
+      '255,0,128',
+      '255,209,102',
+      '6,214,160',
+      '120,80,255'
+    ];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+
+  update(){
+    this.x += Math.cos(this.angle) * this.speed;
+    this.y += Math.sin(this.angle) * this.speed;
+
+    if(this.x < -100 || this.x > W+100 || this.y < -100 || this.y > H+100){
+      this.reset();
+    }
+  }
+
+  draw(){
+    ctx.beginPath();
+    ctx.moveTo(this.x, this.y);
+    ctx.lineTo(
+      this.x + Math.cos(this.angle) * this.len,
+      this.y + Math.sin(this.angle) * this.len
+    );
+
+    ctx.strokeStyle = `rgba(${this.color},0.2)`;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+}
+
+
+const particles = [];
+const lines = [];
+
+for(let i=0;i<60;i++) particles.push(new Particle());
+for(let i=0;i<50;i++) lines.push(new Line());
+
+
+function animate(){
+  ctx.clearRect(0,0,W,H);
+
+  particles.forEach(p => { p.update(); p.draw(); });
+  lines.forEach(l => { l.update(); l.draw(); });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+/* ================= REVEAL ================= */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.classList.add('up');
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:0.12});
+
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r')
+.forEach(el => obs.observe(el));
+
+
+/* ================= SKILL BARS ================= */
+const bObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.fill').forEach(f => {
+        setTimeout(() => {
+          f.style.width = f.dataset.w + '%';
+        }, 80);
+      });
+      bObs.unobserve(e.target);
+    }
+  });
+},{threshold:0.15});
+
+document.querySelectorAll('.skill-group')
+.forEach(g => bObs.observe(g));
+
+
+/* ================= TEXT ANIMATION ================= */
+function typeEffect(el, speed = 60){
+  const text = el.textContent;
+  el.textContent = '';
+  let i = 0;
+
+  function typing(){
+    if(i < text.length){
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(typing, speed);
+    }
+  }
+
+  setTimeout(typing, 500);
+}
+
+document.querySelectorAll('.hero-title, .big')
+.forEach(el => typeEffect(el, 60));
+
+
+/* FADE SMOOTH */
+document.querySelectorAll('.hero-desc, .section-tag').forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = 'translateY(30px)';
+
+  setTimeout(() => {
+    el.style.transition = 'all 1.2s ease';
+    el.style.opacity = 1;
+    el.style.transform = 'translateY(0)';
+  }, 800);
+});
+
+
+/* ================= FORM ================= */
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const btn = this.querySelector('button[type=submit]');
+  btn.textContent = 'Envoi…';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    document.getElementById('form-msg').textContent = '✅ Message envoyé !';
+    btn.textContent = 'Envoyer le message →';
+    btn.disabled = false;
+    this.reset();
+  }, 1400);
+});
+
+
+/* ================= NAV SCROLL ================= */
+const nb = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  nb.style.background = window.scrollY > 50
+    ? 'rgba(7,8,13,.97)'
+    : 'rgba(7,8,13,.8)';
+},{passive:true});
+
+
+/* ================= MOBILE MENU ================= */
+let menuOpen = false;
+
+document.getElementById('ham').addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  const nl = document.querySelector('.nav-links');
+
+  if(menuOpen){
+    nl.style.cssText = `
+      display:flex;
+      flex-direction:column;
+      position:fixed;
+      top:60px;
+      left:0;
+      right:0;
+      background:rgba(7,8,13,.98);
+      padding:2rem;
+      gap:1.5rem;
+      border-bottom:1px solid var(--border);
+      z-index:499`;
+  } else {
+    nl.style.cssText = '';
+  }
+});
+
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    menuOpen = false;
+    document.querySelector('.nav-links').style.cssText = '';
+  });
+});
+
+
+/* ================= NAV ACTIVE ================= */
+const secs = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  secs.forEach(s => {
+    if(window.scrollY >= s.offsetTop - 150){
+      current = s.id;
+    }
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.style.color =
+      a.getAttribute('href') === '#' + current
+      ? 'var(--accent)'
+      : '';
+  });
+
+},{passive:true});
+
+</script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // empêche le rechargement
+
+    // récupérer les valeurs
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    // créer le message WhatsApp
+    let whatsappMessage = 
+    `Nom: ${name}%0A` +
+    `Email: ${email}%0A` +
+    `Sujet: ${subject}%0A` +
+    `Message: ${message}`;
+
+    // ton numéro WhatsApp
+    let phoneNumber = "237693559703";
+
+    // créer le lien
+    let url = `https://wa.me/${693559703}?text=${whatsappMessage}`;
+
+    // ouvrir WhatsApp
+    window.open(url, "_blank");
+});
+</script>
+</body>
+</html>
