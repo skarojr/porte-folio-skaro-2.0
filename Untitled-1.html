@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Yonkoue Njoya Emma Junior</title>
+
+<style>
+
+:root{
+  --bg:#07080d;
+  --card:#13141f;
+  --accent:#00d4ff;
+  --text:#dde1f0;
+  --muted:#8890aa;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.cv{
+  max-width:900px;
+  margin:20px auto;
+  background:var(--card);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 0 40px rgba(0,212,255,.15);
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#0d0e15,#11121b);
+  padding:30px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.photo{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  overflow:hidden;
+  border:3px solid var(--accent);
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.name h1{
+  margin:0;
+  font-size:26px;
+}
+
+.name span{
+  color:var(--accent);
+}
+
+.contact{
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* CONTENT */
+.content{
+  display:flex;
+}
+
+/* LEFT */
+.left{
+  width:40%;
+  padding:25px;
+  border-right:1px solid rgba(255,255,255,0.05);
+}
+
+.section{
+  margin-bottom:25px;
+}
+
+.section h3{
+  color:var(--accent);
+  font-size:14px;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.section p{
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* RIGHT */
+.right{
+  width:60%;
+  padding:25px;
+}
+
+.job{
+  margin-bottom:15px;
+}
+
+.job h4{
+  margin:0;
+  font-size:14px;
+}
+
+.job span{
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* SKILLS */
+.skill{
+  margin-bottom:10px;
+}
+
+.bar{
+  height:5px;
+  background:#1a1b25;
+  border-radius:5px;
+}
+
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--accent),#7dd3fc);
+}
+
+/* PRINT */
+@media print{
+  body{background:#fff}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="photo">
+      <img src="profil.jpeg" alt="">
+    </div>
+
+    <div class="name">
+      <h1>YONKOUE NJOYA<br><span>EMMA JUNIOR</span></h1>
+      <div class="contact">
+        📞 +237693559703 <br>
+        📧 ej2663855@gmail.com <br>
+        📍 Cameroun (Douala)
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- LEFT -->
+    <div class="left">
+
+      <div class="section">
+        <h3>PROFIL</h3>
+        <p>
+          Étudiant en première année de Génie Logiciel à l’IUGET. 
+          Passionné par le développement web, le design graphique et le marketing digital. 
+          Créatif, rigoureux et orienté résultats.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>COMPÉTENCES</h3>
+
+        <div class="skill">HTML 80%
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+
+        <div class="skill">CSS 60%
+          <div class="bar"><div class="fill" style="width:60%"></div></div>
+        </div>
+
+        <div class="skill">JavaScript 45%
+          <div class="bar"><div class="fill" style="width:45%"></div></div>
+        </div>
+
+        <div class="skill">Canva 90%
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">Illustrator 75%
+          <div class="bar"><div class="fill" style="width:75%"></div></div>
+        </div>
+
+        <div class="skill">Photoshop 60%
+          <div class="bar"><div class="fill" style="width:60%"></div></div>
+        </div>
+
+        <div class="skill">Marketing Digital 85%
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <div class="section">
+        <h3>EXPÉRIENCE</h3>
+
+        <div class="job">
+          <h4>Consultant Informatique – MasterKey</h4>
+        </div>
+
+        <div class="job">
+          <h4>Marketing Digital – MasterKey</h4>
+        </div>
+
+        <div class="job">
+          <h4>Kayo Digital Technology</h4>
+        </div>
+
+        <div class="job">
+          <h4>MCL HighTech Service</h4>
+        </div>
+
+        <div class="job">
+          <h4>Langeo – Douala</h4>
+        </div>
+
+      </div>
+
+      <div class="section">
+        <h3>FORMATION</h3>
+
+        <div class="job">
+          <h4>Génie Logiciel</h4>
+          <span>IUGET – 1ère année</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
